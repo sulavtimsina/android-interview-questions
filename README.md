@@ -753,8 +753,14 @@ It is also a good practice to annotate overridden methods with `@Override` to ma
 #### Base
 
 * Tell all the Android application components. [Android Official](https://developer.android.com/guide/components/fundamentals.html#Components)
+	Each component is an entry point through which the system or a user can enter your app. The 4 components are:
+	i) Activity
+	ii) Service
+	iii) Broadcast Receiver
+	iv) Content Provider
 
 * What is the structure of an Android Application?
+
 
 * What is `Context`? How is it used? [Medium](https://medium.com/p/understanding-context-in-android-application-330913e32514)
 
@@ -821,18 +827,27 @@ It is also a good practice to annotate overridden methods with `@Override` to ma
 #### Intents and Broadcasting
 
 * What is `Intent`? [StackOverflow](https://stackoverflow.com/questions/6578051/what-is-an-intent-in-android)
+	An intent is 'an intention to perform an action'. It can be used to start activity, to send a broadcast receiver and to communicate with a background service. Main information in intent are:
+	- action
+	- data
 
 * What is an Implicit `Intent`?
+	If the target component is not defined directly but enough data is provided so that the android system can evaluate the registered components.
 
 * What is an Explicit `Intent`?
+	If the target component is defined directly.
 
 * What is a `BroadcastReceiver`? [StackOverflow](https://stackoverflow.com/questions/5296987/what-is-broadcastreceiver-and-when-we-use-it)
+ 	A component that enables the system to deliver events to the app. the events can be system generated (power off, airplane mode turned on) or user generated (button click or anything at all);
 
 * What is a `LocalBroadcastManager`? [Developer Android](https://developer.android.com/reference/android/support/v4/content/LocalBroadcastManager.html)
 
 * What is the function of an `IntentFilter`?
+	Specifies the types of intents that an activity, service, or broadcast receiver can respond to.
+	When you create an implicit intent, the Android system finds the appropriate component to start by comparing the contents of the intent to the intent filters declared in the manifest file of other apps on the device. If the intent matches an intent filter, the system starts that component and delivers it the Intent object.
 
 * What is a Sticky `Intent`? [AndroidInterview](http://www.androidinterview.com/what-is-a-sticky-intent/)
+
 
 * Describe how broadcasts and intents work to be able to pass messages around your app?
 
