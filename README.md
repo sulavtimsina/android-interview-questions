@@ -1087,6 +1087,7 @@ It is also a good practice to annotate overridden methods with `@Override` to ma
 * Reverse Engineering an APK.
 
 * What is proguard used for?
+To make your APK file as small as possible, we should be able to shrink to remove unused code and resources in your release build.ProGuard detects and removes unused classes, fields, methods, and attributes from your packaged app, including those from included code libraries (making it a valuable tool for working around the 64k reference limit). ProGuard also optimizes the bytecode, removes unused code instructions, and obfuscates the remaining classes, fields, and methods with short names.
 
 * What is obfuscation? What is it used for? What about minification?
 
