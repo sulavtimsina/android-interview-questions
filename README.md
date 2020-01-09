@@ -244,7 +244,10 @@
     - Dijkstra algorithm
     - A* algorithm
     - Breadth First Search
-    - Depth First Search
+    - 
+    
+    
+    First Search
 
 ### Core Java
 
@@ -807,6 +810,7 @@ It is also a good practice to annotate overridden methods with `@Override` to ma
 * Tell about Constraint Layout [Mindorks](https://blog.mindorks.com/using-constraint-layout-in-android-531e68019cd)
 
 * Do you know what is the view tree? How can you optimize its depth?
+[Optimizing Layout Hierarchies](https://developer.android.com/training/improving-layouts/optimizing-layout)
 
 #### Displaying Lists of Content
 
