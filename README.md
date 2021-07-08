@@ -769,8 +769,15 @@ It is also a good practice to annotate overridden methods with `@Override` to ma
 * What is `Context`? How is it used? [Medium](https://medium.com/p/understanding-context-in-android-application-330913e32514)
 
 * What is `AndroidManifest.xml`?
+Every app project must have an AndroidManifest.xml file (with precisely that name) at the root of the project source set. The manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play.
+Among many other things, the manifest file is required to declare the following:
+The app's package name
+The components of the app, which include all activities, services, broadcast receivers, and content providers.
+The permissions that the app needs in order to access protected parts of the system or other apps.
+If we're using Android Studio to build your app, the manifest file is created for us, and most of the essential manifest elements are added as we build our app (especially when using code templates).
 
 * What is `Application` class?
+ It is the Base class for maintaining global application state. We can provide our own implementation by creating a subclass and specifying the fully-qualified name of this subclass as the "android:name" attribute in your AndroidManifest.xml's <application> tag. The Application class, or your subclass of the Application class, is instantiated before any other class when the process for your application/package is created.
 
 #### Activity
 
