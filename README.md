@@ -763,6 +763,7 @@ It is also a good practice to annotate overridden methods with `@Override` to ma
 	iv) Content Provider
 
 * What is the structure of an Android Application?
+![image](https://user-images.githubusercontent.com/4526977/124928854-9b2e8280-dfc5-11eb-873f-ba5561b3c042.png)
 
 
 * What is `Context`? How is it used? [Medium](https://medium.com/p/understanding-context-in-android-application-330913e32514)
